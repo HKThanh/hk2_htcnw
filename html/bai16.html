@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .travel {
+            width: 370px;
+            margin: 0 auto;
+            margin-top: 10px;
+            box-shadow: 0 0 30px 2px black;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-top: 4px;
+            margin-bottom: 6px;
+        }
+
+        select {
+            background-color: rgb(161, 166, 172);
+        }
+    </style>
+</head>
+<body>
+    <div class="travel">
+        <form action="">
+            <h1 style="margin-top: 0px;">Travel reservation form</h1>
+            <h3>* denotes mandotory</h3>
+            <label for="fullname">Full name*:</label><br>
+            <input type="text" name="fname" id="fullname" placeholder="FirstName LastName" size="20">
+            <br>
+
+            <label for="email">Email address*:</label><br>
+            <input type="text" name="mail" id="email" placeholder="EMAIL_ADDRESS">
+            <br>
+
+            <label for="list">Select Tour Package* :</label><br>
+            <select name="listtour" id="list">
+                <option value="goa">Goa</option>
+            </select>
+            <br>
+
+            <label for="aDate">Arrival date*:</label><br>
+            <input type="text" name="Arrival Date" id="aDate" placeholder="m/d/y">
+            <br>
+
+            <label for="numPer">Number of persons*:</label><br>
+            <input type="text" name="number" id="numPer" placeholder="UNKNOWN_TYPE">
+            <br>
+
+            <p>What would you want to avail?*</p>
+            <label for="check01">Boarding</label>
+            <input type="checkbox" name="check1" id="check01"><br>
+
+            <label for="check02">Fooding</label>
+            <input type="checkbox" name="check2" id="check02"><br>
+            
+            <label for="check03">Sight seeing</label>
+            <input type="checkbox" name="check3" id="check03"><br>
+
+            <label for="coupon">Discout Coupon code:</label><br>
+            <input type="text" name="couponcode" id="coupon" placeholder="UNKNOWN_TYPE"><br>
+
+            <p>Terms and conditions*</p>
+            <input type="radio" name="radio1" id="radioAgree">
+            <label for="radioAgree">I agree</label>
+
+            <input type="radio" name="radio2"
+            id="radioDisagree">
+            <label for="radioDisagree">I disagree</label><br>
+
+            <input type="submit" value="Complete reservation">
+    </div>
+</body>
+</html>
