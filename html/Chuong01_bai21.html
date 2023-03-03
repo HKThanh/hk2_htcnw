@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .menu-flex {
+            background-color: rgb(80, 80, 80);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 30px;
+            align-items: center;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        #logo {
+            color: green;
+        }
+        /* #html {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            background-color: rgb(85, 126, 24);
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="https://www.w3schools.com/html/default.asp" id="logo"> w3schools.com <br>THE WORLD'S LARGEST WEB DEVELOPER SITE</a>
+        </header>
+        <div class="menu-flex">
+            <div></div>
+            <div id="html"><a href="">HTML</a></div>
+            <div id="css"><a href="">CSS</a></div>
+            <div id="javascript"><a href="">JAVASCRIPT</a></div>
+            <div id="tutorials"><a href="">TUTORIALS</a></div>
+            <div id="references"><a href="">REFERENCES</a></div>
+            <div id="examples"><a href="">EXAMPLES</a></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
