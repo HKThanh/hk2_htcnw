@@ -5,58 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             padding: 0;
             margin: 0 auto;
         }
         .wrapper {
+            width: 1000px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            box-shadow: 0 0 30px 4px black;
+        }
+        #head {
+            display: flex;
+            font-size: 30px;
             text-align: center;
         }
+        #logo {
+            font-weight: bolder;
+            color: black;
+        }
         .menu-flex {
-            background-color: rgb(80, 80, 80);
-            width: 100%;
             display: flex;
-            justify-content: center;
-            font-size: 18px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            height: 30px;
-            align-items: center;
+            background-color: rgb(78, 77, 77);
         }
         a {
-            color: white;
             text-decoration: none;
         }
-        #logo {
+        .menu-flex>div>a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .menu-flex>div {
+            padding: 16px 21px 16px 21px;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        #html {
+            background-color: rgb(47, 255, 127);
+        }
+        .menu-flex .globe {
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+        .menu-flex .search {
+            padding-left: 20px;
+            padding-right: 66px;
+        }
+        .content {
+            display: flex;
+            width: 100%;
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            background-color: rgb(233, 233, 233);
+        }
+        aside > a {
+            line-height: 1.5;
+            color: black;
+            margin: 0px;
+            margin-left: 15px;
+        }
+        aside > h1 {
+            margin: 0;
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .image {
+            margin: 10px;
+        }
+        .html__Title {
+            margin-left: 10px;
+        }
+        .html__Title > h1 {
+            font-size: 32px;
+            font-style: normal;
+        }
+        .site--going {
+            width: 100%;
+            display: flex;
+        }
+        .site--going > a {
+            margin-top: 16px;
+            margin-bottom: 14px;
             color: green;
         }
-        /* #html {
+        .site--going > a:nth-child(1) {
+            margin-right: 310px;
+        }
+
+        .html {
             display: flex;
-            height: 100%;
-            align-items: center;
-            background-color: rgb(85, 126, 24);
-        } */
+        }
+        .html > img {
+            margin: 0px;
+            margin-left: 10px;
+            float: left;
+            line-height: 1.5;
+        }
+        .htmldetails {
+            margin: 0px;
+            margin-left: 20px;
+            line-height: 2;
+        }
+        .details {
+            margin-top: 100px;
+            margin-left: 10px;
+        }
+        .details > h2 {
+            margin-bottom: 20px;
+        }
+        .details > p {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <header>
+        <header id="head">
             <a href="https://www.w3schools.com/html/default.asp" id="logo"> w3schools.com <br>THE WORLD'S LARGEST WEB DEVELOPER SITE</a>
         </header>
         <div class="menu-flex">
-            <div></div>
+            <div><i class="fa fa-home"></i></div>
             <div id="html"><a href="">HTML</a></div>
             <div id="css"><a href="">CSS</a></div>
             <div id="javascript"><a href="">JAVASCRIPT</a></div>
             <div id="tutorials"><a href="">TUTORIALS</a></div>
             <div id="references"><a href="">REFERENCES</a></div>
             <div id="examples"><a href="">EXAMPLES</a></div>
-            <div></div>
-            <div></div>
+            <div class="globe"><i class="fa fa-globe" aria-hidden="true"></i></div>
+            <div class="search"><i class="fa fa-search" aria-hidden="true"></i></div>
+        </div>
+        <div class="content">
+                <aside>
+                        <h1>HTML Tutorial</h1>
+                        <a href=""><b>HTML Home</b></a>
+                        <a href="">HTML Introduction</a>
+                        <a href="">HTML Editors</a>
+                        <a href="">HTML Basic</a>
+                        <a href="">HTML Elements</a>
+                        <a href="">HTML Attributes</a>
+                        <a href="">HTML Headings</a>
+                        <a href="">HTML Paragraphs</a>
+                        <a href="">HTML Styles</a>
+                        <a href="">HTML Formatting</a>
+                        <a href="">HTML Quotations</a>
+                        <a href="">HTML Computer code</a>
+                        <a href="">HTML Comments</a>
+                        <a href="">HTML CSS</a>
+                        <a href="">HTML Links</a>
+                        <a href="">HTML Images</a>
+                        <a href="">HTML Tables</a>
+                        <a href="">HTML Lists</a>
+                        <a href="">HTML Blocks</a>
+                </aside>
+            
+            <div class="section">
+                <section>
+                    <div class="pane">
+                        <img src="/hk2_htcnw/images/Panel.GIF" alt="This is a pane image" class="image" width="680">
+                    </div>
+                    <div class="html__Title">
+                        <h1 style="font-weight: bigger;">HTML(5) Tutorial</h1>
+                    </div>
+                    <div class="site--going">
+                        <a href=""><< W3Schools Home</a>
+                        <a href="">Next Chapter >></a>
+                    </div>
+                    <div class="html">
+                        <img src="/hk2_htcnw/images/html5_318-903450.webp" alt="" width="180"> 
+                            <div class="htmldetails">With HTML you can create your own web site. <br>This tutorial teaches you everything about HTML. <br>HTML is easy to learn - You will enjoy it.</div>
+                    </div>
+                    <div class="details">
+                        <h2>Examples in Every Chapter</h2>
+                        <p>This HTML tutorial contains hundreds of HTML examples.</p>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 </body>
