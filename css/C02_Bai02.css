@@ -1,0 +1,75 @@
+.bai_2_b {
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.effects {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.css--color {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: 2px;
+    text-align: center;
+    font-size: 30px;
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.effects__top, .effects__bottom {
+    display: flex;
+    font-size: 24px;
+}
+
+.effects__top > div, .effects__bottom > div {
+    margin: 6px;
+}
+
+.effects__bottom {
+    margin-left: 40px;
+}
+
+.style1 {
+    width: 190px;
+    font-weight: bolder;
+    text-shadow: 0px 6px 4px green, -2px -5px 4px rgb(247, 121, 121), 4px -5px 2px rgb(255, 210, 86);
+    color: rgba(0, 0, 0, 0.747);
+}
+.style2 {
+    text-align: center;
+    width: 150px;
+    background-color: rgb(218, 183, 118);
+    text-shadow: 0 0 4px white;
+    color: rgb(106, 25, 122);
+}
+.style3 {
+    width: 190px;
+    text-shadow: 0px -10px deeppink;
+
+}
+.style4 {
+    width: 150px;
+    background: -webkit-linear-gradient(rgb(233, 245, 127), rgb(238, 175, 41));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style5 {
+    background-color: black;
+    color: red;
+}
+.style6 {
+    font-size: 26px;
+    width: 150px;
+    text-align: center;
+    background-color: black;
+    color: blue;
+    text-shadow: 0 0 4px aqua;
+}
