@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .sponsors {
+            margin: 0 auto;
+            border: 1px solid white;
+            box-shadow: 0 0 20px 2px black;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sponsors p {
+            text-align: center;
+            font-size: 24px;
+            color: rgb(139, 72, 48);
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .top div, .bottom div {
+            margin: 2px;
+            width: 150px;
+            height: 60px;
+            border: 1px solid brown;
+            text-align: center;
+        }
+        .top {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+        }
+        .bottom {
+            width: 100%;
+            display: flex;
+        }
+        img {
+            width: 100%;
+            height: 60%;
+            object-fit: fill;
+            margin-top: 12px;
+        }
+        .bottom .null {
+            border: 0px;
+        }
+        .top > div:hover, .bottom > div:hover {
+            border: 6px double brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="sponsors">
+        <p>Sponsors</p>
+        <div class="top">
+            <div class=""><img src="https://printgo.vn/uploads/media/761388/logo-fb-4_1559752979.jpg" alt=""></div>
+            <div class=""><img src="https://www.profiledep.com/Uploads/images/logo%20microsoft%203.jpg" alt="" srcset=""></div>
+            <div class=""><img src="https://nextjump.com/wp-content/uploads/2022/03/NxJ_Black.png" alt="" srcset=""></div>
+            <div class=""><img src="https://mms.businesswire.com/media/20190306005251/en/709184/22/Ooyala_Logo.jpg" alt="" srcset=""></div>
+        </div>
+        <div class="bottom">
+            <div class=""><img src="https://1000logos.net/wp-content/uploads/2022/08/Palantir-Logo.png" alt="" srcset=""></div>
+            <div class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Quora_logo.svg/2560px-Quora_logo.svg.png" alt="" srcset=""></div>
+            <div class=""><img src="https://www.freepnglogos.com/uploads/tripadvisor-logo-png/tripadvisor-logo-rick-wilcox-magic-theater-the-best-illusion-show-wisconsin-dells-30.png" alt="" srcset=""></div>
+            <div class="null"></div>
+        </div>
+    </div>
+</body>
+</html>
