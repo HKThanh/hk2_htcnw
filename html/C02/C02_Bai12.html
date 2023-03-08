@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper {
+            margin: 0 auto;
+            height: 300px;
+            width: 500px;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin-top: 10px;
+            position: relative;
+            display: flex;
+            box-shadow: 0 0 20px 2px rgb(65, 65, 65);
+        }
+        .ribbon span {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .ribbon span::before { 
+            content: 'Best seller 2015';
+            position: absolute;
+            width: 150%;
+            height: 40px;
+            background-color: rgb(255, 66, 66);
+            border: 1px solid orange;
+            transform: rotate(-45deg) translateY(-20px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 16px;
+        }
+        h1 {
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-bottom: 30px;
+            text-shadow:   0 0 3px #000000, 3px 0 3px #000000, 0 3px 3px #000000,  -3px 0 3px #000000,  0 -3px 3px #000000; 
+        }
+        #text {
+            margin-left: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ribbon"><span></span></div>
+        <div class="title">
+            <h1>
+                Cascading style sheets book
+            </h1>
+                <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat, fuga non veritatis sit sequi hic tempore, ducimus est necessitatibus, maiores velit repellat nam facere veniam itaque beatae odit reiciendis.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
