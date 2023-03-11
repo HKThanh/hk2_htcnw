@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0 auto;
+        }
+        .inputText {
+            width: 400px;
+            height: 50px;
+            box-shadow: 0 0 20px 2px black;
+            line-height: 50px;
+        }
+        input[type = text] {
+            width: 100px;
+            transition: width .35s ease-in-out;
+        }
+        input[type = text]:focus {
+            width: 250px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputText">
+        Search: <input type="text">
+    </div>
+</body>
+</html>
