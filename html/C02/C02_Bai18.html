@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0 auto;
+        }
+        .menu {
+            width: 800px;
+            background-color: green;
+            margin: 0 auto;
+            height: 40px;
+        }
+        #main-menu {
+            width: 800px;
+            background-color: green;
+            position: absolute;
+        }
+        li {
+            width: 150px;
+            list-style: none;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            line-height: 40px;
+        }
+        .main-menu-li-home {
+            position: absolute;
+            left: 20px;
+        }
+        .main-menu-li-about {
+            position: absolute;
+            left: 170px;
+        }
+        .main-menu-li-products {
+            position: absolute;
+            left: 320px;
+        }
+        .main-menu-li-services {
+            position: absolute;
+            left: 470px;
+        }
+        .main-menu-li-contact {
+            position: absolute;
+            left: 620px;
+        }
+        #sub-menu {
+            display: none;
+        }
+        .main-menu-li-products:hover {
+            background-color: greenyellow;
+            color: black;
+        }
+        a:hover {
+            color: black;
+            font-weight: bold;
+        }
+        .main-menu-li-products:hover #sub-menu{
+            display: block;
+            position: absolute;
+            left: 0px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul id="main-menu">
+            <li class="main-menu-li-home"><a href="">Home</a></li>
+            <li class="main-menu-li-about"><a href="">About</a></li>
+            <li class="main-menu-li-products"><a href="">Products</a>
+                <ul id="sub-menu">
+                    <li><a href="">Engineering</a></li>
+                    <li><a href="">Telecom</a></li>
+                    <li><a href="">Energy</a></li>
+                    <li><a href="">Finance</a></li>
+                    <li><a href="">Consultancy</a></li>
+                </ul>
+            </li>
+            <li class="main-menu-li-services"><a href="">Services</a></li>
+            <li class="main-menu-li-contact"><a href="">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
