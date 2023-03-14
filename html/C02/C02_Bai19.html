@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0 auto;
+        }
+        .menu {
+            width: 800px;
+            height: 40px;
+            background-color: white;
+        }
+        #main-menu li {
+            background-color: black;
+            position: absolute;
+            top: 2px;
+            list-style: none;
+            line-height: 40px;
+            width: 150px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        #main-menu {
+            position: absolute;
+        }
+        #main-menu li:nth-child(1){
+            left: 10px;
+        }
+        #main-menu li:nth-child(2){
+            left: 162px;
+        }
+        #main-menu li:nth-child(3){
+            left: 322px;
+        }
+        #main-menu li:nth-child(4){
+            left: 482px;
+        }
+        #main-menu li:nth-child(5){
+            left: 642px;
+        }
+        #main-menu li .sub-menu li {
+            display: none;
+            position: absolute;
+        }
+        #main-menu li:hover {
+            background-color: lightgreen;
+        }
+        .sub-menu {
+            position: absolute;
+        }
+        #main-menu li:nth-child(3):hover .sub-menu li {
+            display: block;
+            position: absolute;
+            background-color: black;
+
+        }
+        #main-menu li:nth-child(3):hover .sub-menu li {
+            width: 300px;
+            height: 40px;
+            background-color: lightgray;
+
+        }
+        #main-menu li:nth-child(3):hover .sub-menu li a {
+            color: black;
+        }
+        #main-menu li:nth-child(3):hover .sub-menu > li:nth-child(1) {
+            left: 0px;
+            top: 0px;
+        }
+        #main-menu li:nth-child(3):hover .sub-menu > li:nth-child(2) {
+            left: 0px;
+            top: 40px;
+        }
+        #main-menu li:nth-child(3):hover .sub-menu > li:nth-child(3) {
+            left: 0px;
+            top: 80px;
+        }
+        #main-menu li:nth-child(3):hover .sub-menu li:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul id="main-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Introduction >></a></li>
+            <li><a href="">Portfolio >></a>
+                <ul class="sub-menu">
+                    <li><a href="">Photography</a></li>
+                    <li><a href="">Web & User Interface Design</a></li>
+                    <li><a href="">Illustration</a></li>
+                </ul>
+            </li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
